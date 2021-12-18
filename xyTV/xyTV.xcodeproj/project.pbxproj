@@ -1,0 +1,781 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		26793904981D4664B00B3D7C /* Pods_xyTVTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DB28B82B5C0801B3561AC1C /* Pods_xyTVTests.framework */; };
+		67E16674C9A9DF58524EF1FF /* Pods_xyTV_xyTVUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA6869630E4B2175B24EA637 /* Pods_xyTV_xyTVUITests.framework */; };
+		C235E945276E071400D791FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C235E944276E071400D791FF /* AppDelegate.swift */; };
+		C235E947276E071400D791FF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C235E946276E071400D791FF /* SceneDelegate.swift */; };
+		C235E949276E071400D791FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C235E948276E071400D791FF /* ViewController.swift */; };
+		C235E94C276E071400D791FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C235E94A276E071400D791FF /* Main.storyboard */; };
+		C235E94F276E071400D791FF /* xyTV.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C235E94D276E071400D791FF /* xyTV.xcdatamodeld */; };
+		C235E951276E071500D791FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C235E950276E071500D791FF /* Assets.xcassets */; };
+		C235E954276E071500D791FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C235E952276E071500D791FF /* LaunchScreen.storyboard */; };
+		C235E95F276E071500D791FF /* xyTVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C235E95E276E071500D791FF /* xyTVTests.swift */; };
+		C235E969276E071500D791FF /* xyTVUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C235E968276E071500D791FF /* xyTVUITests.swift */; };
+		C235E96B276E071500D791FF /* xyTVUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C235E96A276E071500D791FF /* xyTVUITestsLaunchTests.swift */; };
+		E1A3521701BE5DEBA301B9E3 /* Pods_xyTV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AE925EFAAA00437EFB868C0 /* Pods_xyTV.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C235E95B276E071500D791FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C235E939276E071300D791FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C235E940276E071400D791FF;
+			remoteInfo = xyTV;
+		};
+		C235E965276E071500D791FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C235E939276E071300D791FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C235E940276E071400D791FF;
+			remoteInfo = xyTV;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		063EF5B7EEA7C024636E59F3 /* Pods-xyTV-xyTVUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xyTV-xyTVUITests.release.xcconfig"; path = "Target Support Files/Pods-xyTV-xyTVUITests/Pods-xyTV-xyTVUITests.release.xcconfig"; sourceTree = "<group>"; };
+		0AE925EFAAA00437EFB868C0 /* Pods_xyTV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_xyTV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D0223CEE3947FD3C8C3A536 /* Pods-xyTV-xyTVUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xyTV-xyTVUITests.debug.xcconfig"; path = "Target Support Files/Pods-xyTV-xyTVUITests/Pods-xyTV-xyTVUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1FE1DEEC4610310422583FCE /* Pods-xyTV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xyTV.release.xcconfig"; path = "Target Support Files/Pods-xyTV/Pods-xyTV.release.xcconfig"; sourceTree = "<group>"; };
+		61C01CD941C4C02D4E6D38D4 /* Pods-xyTVTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xyTVTests.debug.xcconfig"; path = "Target Support Files/Pods-xyTVTests/Pods-xyTVTests.debug.xcconfig"; sourceTree = "<group>"; };
+		709D55E51F941EC04FAC95C7 /* Pods-xyTV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xyTV.debug.xcconfig"; path = "Target Support Files/Pods-xyTV/Pods-xyTV.debug.xcconfig"; sourceTree = "<group>"; };
+		8B2F2BF5B9F1B8948482B670 /* Pods-xyTVTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xyTVTests.release.xcconfig"; path = "Target Support Files/Pods-xyTVTests/Pods-xyTVTests.release.xcconfig"; sourceTree = "<group>"; };
+		8DB28B82B5C0801B3561AC1C /* Pods_xyTVTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_xyTVTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C235E941276E071400D791FF /* xyTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xyTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C235E944276E071400D791FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C235E946276E071400D791FF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C235E948276E071400D791FF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C235E94B276E071400D791FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C235E94E276E071400D791FF /* xyTV.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = xyTV.xcdatamodel; sourceTree = "<group>"; };
+		C235E950276E071500D791FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C235E953276E071500D791FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C235E955276E071500D791FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C235E95A276E071500D791FF /* xyTVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = xyTVTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C235E95E276E071500D791FF /* xyTVTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xyTVTests.swift; sourceTree = "<group>"; };
+		C235E964276E071500D791FF /* xyTVUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = xyTVUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C235E968276E071500D791FF /* xyTVUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xyTVUITests.swift; sourceTree = "<group>"; };
+		C235E96A276E071500D791FF /* xyTVUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xyTVUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EA6869630E4B2175B24EA637 /* Pods_xyTV_xyTVUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_xyTV_xyTVUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C235E93E276E071400D791FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1A3521701BE5DEBA301B9E3 /* Pods_xyTV.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C235E957276E071500D791FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26793904981D4664B00B3D7C /* Pods_xyTVTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C235E961276E071500D791FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67E16674C9A9DF58524EF1FF /* Pods_xyTV_xyTVUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		571990A9DC0E6BAA2692C738 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0AE925EFAAA00437EFB868C0 /* Pods_xyTV.framework */,
+				EA6869630E4B2175B24EA637 /* Pods_xyTV_xyTVUITests.framework */,
+				8DB28B82B5C0801B3561AC1C /* Pods_xyTVTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		71BC88C0C77681FA2C4C4E61 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				709D55E51F941EC04FAC95C7 /* Pods-xyTV.debug.xcconfig */,
+				1FE1DEEC4610310422583FCE /* Pods-xyTV.release.xcconfig */,
+				1D0223CEE3947FD3C8C3A536 /* Pods-xyTV-xyTVUITests.debug.xcconfig */,
+				063EF5B7EEA7C024636E59F3 /* Pods-xyTV-xyTVUITests.release.xcconfig */,
+				61C01CD941C4C02D4E6D38D4 /* Pods-xyTVTests.debug.xcconfig */,
+				8B2F2BF5B9F1B8948482B670 /* Pods-xyTVTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C235E938276E071300D791FF = {
+			isa = PBXGroup;
+			children = (
+				C235E943276E071400D791FF /* xyTV */,
+				C235E95D276E071500D791FF /* xyTVTests */,
+				C235E967276E071500D791FF /* xyTVUITests */,
+				C235E942276E071400D791FF /* Products */,
+				71BC88C0C77681FA2C4C4E61 /* Pods */,
+				571990A9DC0E6BAA2692C738 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C235E942276E071400D791FF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C235E941276E071400D791FF /* xyTV.app */,
+				C235E95A276E071500D791FF /* xyTVTests.xctest */,
+				C235E964276E071500D791FF /* xyTVUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C235E943276E071400D791FF /* xyTV */ = {
+			isa = PBXGroup;
+			children = (
+				C235E944276E071400D791FF /* AppDelegate.swift */,
+				C235E946276E071400D791FF /* SceneDelegate.swift */,
+				C235E948276E071400D791FF /* ViewController.swift */,
+				C235E94A276E071400D791FF /* Main.storyboard */,
+				C235E950276E071500D791FF /* Assets.xcassets */,
+				C235E952276E071500D791FF /* LaunchScreen.storyboard */,
+				C235E955276E071500D791FF /* Info.plist */,
+				C235E94D276E071400D791FF /* xyTV.xcdatamodeld */,
+			);
+			path = xyTV;
+			sourceTree = "<group>";
+		};
+		C235E95D276E071500D791FF /* xyTVTests */ = {
+			isa = PBXGroup;
+			children = (
+				C235E95E276E071500D791FF /* xyTVTests.swift */,
+			);
+			path = xyTVTests;
+			sourceTree = "<group>";
+		};
+		C235E967276E071500D791FF /* xyTVUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C235E968276E071500D791FF /* xyTVUITests.swift */,
+				C235E96A276E071500D791FF /* xyTVUITestsLaunchTests.swift */,
+			);
+			path = xyTVUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C235E940276E071400D791FF /* xyTV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C235E96E276E071500D791FF /* Build configuration list for PBXNativeTarget "xyTV" */;
+			buildPhases = (
+				74569E7139EB0B60092F26E0 /* [CP] Check Pods Manifest.lock */,
+				C235E93D276E071400D791FF /* Sources */,
+				C235E93E276E071400D791FF /* Frameworks */,
+				C235E93F276E071400D791FF /* Resources */,
+				838545ED684710FA57B29782 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = xyTV;
+			productName = xyTV;
+			productReference = C235E941276E071400D791FF /* xyTV.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C235E959276E071500D791FF /* xyTVTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C235E971276E071500D791FF /* Build configuration list for PBXNativeTarget "xyTVTests" */;
+			buildPhases = (
+				A572BCA98A426931CBFDAB51 /* [CP] Check Pods Manifest.lock */,
+				C235E956276E071500D791FF /* Sources */,
+				C235E957276E071500D791FF /* Frameworks */,
+				C235E958276E071500D791FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C235E95C276E071500D791FF /* PBXTargetDependency */,
+			);
+			name = xyTVTests;
+			productName = xyTVTests;
+			productReference = C235E95A276E071500D791FF /* xyTVTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C235E963276E071500D791FF /* xyTVUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C235E974276E071500D791FF /* Build configuration list for PBXNativeTarget "xyTVUITests" */;
+			buildPhases = (
+				DAB397924DFEB31F0ED87FEE /* [CP] Check Pods Manifest.lock */,
+				C235E960276E071500D791FF /* Sources */,
+				C235E961276E071500D791FF /* Frameworks */,
+				C235E962276E071500D791FF /* Resources */,
+				21E9A80AAA78D68C549574D9 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C235E966276E071500D791FF /* PBXTargetDependency */,
+			);
+			name = xyTVUITests;
+			productName = xyTVUITests;
+			productReference = C235E964276E071500D791FF /* xyTVUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C235E939276E071300D791FF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					C235E940276E071400D791FF = {
+						CreatedOnToolsVersion = 13.2;
+					};
+					C235E959276E071500D791FF = {
+						CreatedOnToolsVersion = 13.2;
+						TestTargetID = C235E940276E071400D791FF;
+					};
+					C235E963276E071500D791FF = {
+						CreatedOnToolsVersion = 13.2;
+						TestTargetID = C235E940276E071400D791FF;
+					};
+				};
+			};
+			buildConfigurationList = C235E93C276E071300D791FF /* Build configuration list for PBXProject "xyTV" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C235E938276E071300D791FF;
+			productRefGroup = C235E942276E071400D791FF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C235E940276E071400D791FF /* xyTV */,
+				C235E959276E071500D791FF /* xyTVTests */,
+				C235E963276E071500D791FF /* xyTVUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C235E93F276E071400D791FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C235E954276E071500D791FF /* LaunchScreen.storyboard in Resources */,
+				C235E951276E071500D791FF /* Assets.xcassets in Resources */,
+				C235E94C276E071400D791FF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C235E958276E071500D791FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C235E962276E071500D791FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		21E9A80AAA78D68C549574D9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-xyTV-xyTVUITests/Pods-xyTV-xyTVUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-xyTV-xyTVUITests/Pods-xyTV-xyTVUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-xyTV-xyTVUITests/Pods-xyTV-xyTVUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		74569E7139EB0B60092F26E0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-xyTV-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		838545ED684710FA57B29782 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-xyTV/Pods-xyTV-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-xyTV/Pods-xyTV-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-xyTV/Pods-xyTV-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A572BCA98A426931CBFDAB51 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-xyTVTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DAB397924DFEB31F0ED87FEE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-xyTV-xyTVUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C235E93D276E071400D791FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C235E94F276E071400D791FF /* xyTV.xcdatamodeld in Sources */,
+				C235E949276E071400D791FF /* ViewController.swift in Sources */,
+				C235E945276E071400D791FF /* AppDelegate.swift in Sources */,
+				C235E947276E071400D791FF /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C235E956276E071500D791FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C235E95F276E071500D791FF /* xyTVTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C235E960276E071500D791FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C235E969276E071500D791FF /* xyTVUITests.swift in Sources */,
+				C235E96B276E071500D791FF /* xyTVUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C235E95C276E071500D791FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C235E940276E071400D791FF /* xyTV */;
+			targetProxy = C235E95B276E071500D791FF /* PBXContainerItemProxy */;
+		};
+		C235E966276E071500D791FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C235E940276E071400D791FF /* xyTV */;
+			targetProxy = C235E965276E071500D791FF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C235E94A276E071400D791FF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C235E94B276E071400D791FF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C235E952276E071500D791FF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C235E953276E071500D791FF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C235E96C276E071500D791FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C235E96D276E071500D791FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C235E96F276E071500D791FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 709D55E51F941EC04FAC95C7 /* Pods-xyTV.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HCPQ4JRW53;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator15.2]" = arm64;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = xyTV/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sundusk.xyTV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C235E970276E071500D791FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FE1DEEC4610310422583FCE /* Pods-xyTV.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HCPQ4JRW53;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = xyTV/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sundusk.xyTV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C235E972276E071500D791FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61C01CD941C4C02D4E6D38D4 /* Pods-xyTVTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HCPQ4JRW53;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sundusk.xyTVTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/xyTV.app/xyTV";
+			};
+			name = Debug;
+		};
+		C235E973276E071500D791FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B2F2BF5B9F1B8948482B670 /* Pods-xyTVTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HCPQ4JRW53;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sundusk.xyTVTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/xyTV.app/xyTV";
+			};
+			name = Release;
+		};
+		C235E975276E071500D791FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D0223CEE3947FD3C8C3A536 /* Pods-xyTV-xyTVUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HCPQ4JRW53;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sundusk.xyTVUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = xyTV;
+			};
+			name = Debug;
+		};
+		C235E976276E071500D791FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 063EF5B7EEA7C024636E59F3 /* Pods-xyTV-xyTVUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HCPQ4JRW53;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sundusk.xyTVUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = xyTV;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C235E93C276E071300D791FF /* Build configuration list for PBXProject "xyTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C235E96C276E071500D791FF /* Debug */,
+				C235E96D276E071500D791FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C235E96E276E071500D791FF /* Build configuration list for PBXNativeTarget "xyTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C235E96F276E071500D791FF /* Debug */,
+				C235E970276E071500D791FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C235E971276E071500D791FF /* Build configuration list for PBXNativeTarget "xyTVTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C235E972276E071500D791FF /* Debug */,
+				C235E973276E071500D791FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C235E974276E071500D791FF /* Build configuration list for PBXNativeTarget "xyTVUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C235E975276E071500D791FF /* Debug */,
+				C235E976276E071500D791FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C235E94D276E071400D791FF /* xyTV.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C235E94E276E071400D791FF /* xyTV.xcdatamodel */,
+			);
+			currentVersion = C235E94E276E071400D791FF /* xyTV.xcdatamodel */;
+			path = xyTV.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C235E939276E071300D791FF /* Project object */;
+}

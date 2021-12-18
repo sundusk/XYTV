@@ -1,0 +1,21 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'xyTV' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+pod 'Alamofire', '~> 5.5'
+  pod  'SnapKit' ,  '~> 5.0.0' 
+
+  # Pods for xyTV
+
+  target 'xyTVTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'xyTVUITests' do
+    # Pods for testing
+  end
+
+end
