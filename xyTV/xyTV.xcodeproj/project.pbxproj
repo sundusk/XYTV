@@ -625,6 +625,7 @@
 		C23E661C27707FD300E6AAE2 /* amf.c in Sources */ = {isa = PBXBuildFile; fileRef = C23E63C527707FD100E6AAE2 /* amf.c */; };
 		C23E661D27707FD300E6AAE2 /* amf.c in Sources */ = {isa = PBXBuildFile; fileRef = C23E63C527707FD100E6AAE2 /* amf.c */; };
 		C23E661E27707FD300E6AAE2 /* amf.c in Sources */ = {isa = PBXBuildFile; fileRef = C23E63C527707FD100E6AAE2 /* amf.c */; };
+		C23E662227709D2500E6AAE2 /* xyLiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23E662127709D2500E6AAE2 /* xyLiveViewController.swift */; };
 		E1A3521701BE5DEBA301B9E3 /* Pods_xyTV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AE925EFAAA00437EFB868C0 /* Pods_xyTV.framework */; };
 /* End PBXBuildFile section */
 
@@ -1085,6 +1086,7 @@
 		C23E63C427707FD100E6AAE2 /* parseurl.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = parseurl.c; sourceTree = "<group>"; };
 		C23E63C527707FD100E6AAE2 /* amf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = amf.c; sourceTree = "<group>"; };
 		C23E63C627707FD100E6AAE2 /* rtmp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rtmp.h; sourceTree = "<group>"; };
+		C23E662127709D2500E6AAE2 /* xyLiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xyLiveViewController.swift; sourceTree = "<group>"; };
 		EA6869630E4B2175B24EA637 /* Pods_xyTV_xyTVUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_xyTV_xyTVUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -1180,6 +1182,7 @@
 				C235E944276E071400D791FF /* AppDelegate.swift */,
 				C235E946276E071400D791FF /* SceneDelegate.swift */,
 				C235E948276E071400D791FF /* ViewController.swift */,
+				C23E662127709D2500E6AAE2 /* xyLiveViewController.swift */,
 				C235E94A276E071400D791FF /* Main.storyboard */,
 				C235E950276E071500D791FF /* Assets.xcassets */,
 				C235E952276E071500D791FF /* LaunchScreen.storyboard */,
@@ -2033,6 +2036,7 @@
 				C23E642127707FD100E6AAE2 /* GPUImageParallelCoordinateLineTransformFilter.m in Sources */,
 				C23E65E327707FD300E6AAE2 /* GPUImageLuminosityBlendFilter.m in Sources */,
 				C23E64BA27707FD200E6AAE2 /* GPUImageDissolveBlendFilter.m in Sources */,
+				C23E662227709D2500E6AAE2 /* xyLiveViewController.swift in Sources */,
 				C23E640027707FD100E6AAE2 /* LFVideoEncoder.m in Sources */,
 				C23E643327707FD100E6AAE2 /* GPUImageColorPackingFilter.m in Sources */,
 				C23E654A27707FD200E6AAE2 /* GPUImageColorBlendFilter.m in Sources */,
