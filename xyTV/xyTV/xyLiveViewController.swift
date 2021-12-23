@@ -7,9 +7,12 @@
 
 import UIKit
 
-class xyLiveViewController: UIViewController, LFLiveSessionDelegate {
+class xyLiveViewController: UIViewController, LFLiveSessionDelegate,UICollectionViewDelegate,UICollectionViewDataSource {
+    
     
     var liveButton : UIButton!
+    var toolbarCollection : UICollectionView!
+    let cellID = "CELLID"
 //    var cameraButton : UIButton!
     
     override func viewDidLoad() {
@@ -29,8 +32,8 @@ class xyLiveViewController: UIViewController, LFLiveSessionDelegate {
 //        containerView.addSubview(cameraButton)
 //        containerView.addSubview(startLiveButton)
         
-        cameraButton.addTarget(self, action: #selector(didTappedCameraButton(_:)), for: .touchUpInside)
-        beautyButton.addTarget(self, action: #selector(didTappedBeautyButton(_:)), for: .touchUpInside)
+       
+       
        
         
         
@@ -57,9 +60,111 @@ class xyLiveViewController: UIViewController, LFLiveSessionDelegate {
         liveButton.titleLabel?.font = UIFont.systemFont(ofSize: 13)
         liveButton.addTarget(self, action: #selector(didTappedStartLiveButton(_:)), for: .touchUpInside)
         
+        //自定义item的FlowLayout
+
+         let flowLayout = UICollectionViewFlowLayout()
+
+         //设置item的size
+
+         flowLayout.itemSize = CGSize.init(width:xyWidth/2,height:38)
+
+         //设置item的排列方式
+
+        flowLayout.scrollDirection = UICollectionView.ScrollDirection.vertical
+
+         //设置item的四边边距
+
+        flowLayout.sectionInset = UIEdgeInsets(top: 0,left: 0, bottom: 0, right: 0)
+
+         //列间距
+
+         flowLayout.minimumLineSpacing = 0
+
+         //行间距
+
+         flowLayout.minimumInteritemSpacing = 0
         
+         
+        toolbarCollection = UICollectionView(frame: CGRect.init(x:0, y:0, width: 0, height: 0),collectionViewLayout:flowLayout)
+
+        containerView.addSubview(toolbarCollection)
+        toolbarCollection.snp.makeConstraints { make in
+            make.left.right.equalTo(containerView)
+            make.height.equalTo(38)
+            make.bottom.equalTo(liveButton.snp.top).offset(-10)
+
+        }
+        toolbarCollection.backgroundColor = UIColor.clear
+        //设置数据源对象
+
+        toolbarCollection.dataSource = self
+
+              //设置代理对象
+
+        toolbarCollection.delegate = self
+
+              //设置uicollectionView的单元格点击
+
+//        toolbarCollection.allowsSelection = true
+        toolbarCollection.register(UINib(nibName: "xyToolbarCollectionViewCell", bundle: nil), forCellWithReuseIdentifier:cellID)
+     
+
       
     }
+    
+    func numberOfSections(in collectionView:UICollectionView) ->Int {
+           return 1
+
+       }
+
+       
+
+       func collectionView(_ collectionView:UICollectionView, numberOfItemsInSection section:Int) -> Int {
+           return 2
+
+       }
+
+       
+
+       func collectionView(_ collectionView:UICollectionView, cellForItemAt indexPath:IndexPath) -> UICollectionViewCell {
+           var cell = xyToolbarCollectionViewCell()
+           cell = collectionView.dequeueReusableCell(withReuseIdentifier:cellID, for: indexPath) as! xyToolbarCollectionViewCell
+           cell.toolbarLabel.text = "你好"
+           
+           if indexPath.row == 0 {
+               cell.toolbarLabel.text = "翻转"
+               cell.toolbarImageView.image = UIImage.init(named: "camra_preview")
+           }else if indexPath.row == 1{
+               cell.toolbarLabel.text = "美颜"
+               cell.toolbarImageView.image = UIImage.init(named: "camra_beauty")
+           }
+
+           cell.backgroundColor = UIColor.clear
+           
+           cell.sender.tag =  indexPath.row + 100
+           
+           
+           cell.sender.addTarget(self, action: #selector(toolbarAdd(_:)), for: .touchUpInside)
+           return cell
+
+           
+
+       }
+    
+    
+    @objc func toolbarAdd(_ button: UIButton) -> Void{
+        if button.tag == 100{ // 摄像头翻转
+            let devicePositon = session.captureDevicePosition;
+            session.captureDevicePosition = (devicePositon == AVCaptureDevice.Position.back) ? AVCaptureDevice.Position.front : AVCaptureDevice.Position.back
+            
+        }else if button.tag == 101{ // 美颜
+            
+        }
+    }
+    
+   
+    
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -175,8 +280,7 @@ class xyLiveViewController: UIViewController, LFLiveSessionDelegate {
     
     // 摄像头
     @objc func didTappedCameraButton(_ button: UIButton) -> Void {
-        let devicePositon = session.captureDevicePosition;
-        session.captureDevicePosition = (devicePositon == AVCaptureDevice.Position.back) ? AVCaptureDevice.Position.front : AVCaptureDevice.Position.back
+        
     }
     
     // 关闭
