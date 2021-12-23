@@ -13,6 +13,7 @@ class xyLiveViewController: UIViewController, LFLiveSessionDelegate,UICollection
     var liveButton : UIButton!
     var toolbarCollection : UICollectionView!
     var popView : xyPopView!
+    var stopLiveButton : UIButton!
     
     let cellID = "CELLID"
 //    var cameraButton : UIButton!
@@ -60,6 +61,19 @@ class xyLiveViewController: UIViewController, LFLiveSessionDelegate,UICollection
         liveButton.setTitleColor(UIColor.white, for: .normal)
         liveButton.titleLabel?.font = UIFont.systemFont(ofSize: 13)
         liveButton.addTarget(self, action: #selector(didTappedStartLiveButton(_:)), for: .touchUpInside)
+        
+        
+        
+        stopLiveButton =  UIButton()
+        containerView.addSubview(stopLiveButton)
+        stopLiveButton.snp.makeConstraints { make in
+            make.right.equalTo(containerView).offset(-30)
+            make.height.width.equalTo(36)
+            make.top.equalTo(containerView).offset(30)
+        }
+        stopLiveButton.setImage(UIImage.init(named: "close_preview"), for: .normal)
+        stopLiveButton.isHidden = true
+        stopLiveButton.addTarget(self, action: #selector(stopLive(_:)), for: .touchUpInside)
         
         //自定义item的FlowLayout
 
@@ -130,7 +144,7 @@ class xyLiveViewController: UIViewController, LFLiveSessionDelegate,UICollection
        func collectionView(_ collectionView:UICollectionView, cellForItemAt indexPath:IndexPath) -> UICollectionViewCell {
            var cell = xyToolbarCollectionViewCell()
            cell = collectionView.dequeueReusableCell(withReuseIdentifier:cellID, for: indexPath) as! xyToolbarCollectionViewCell
-           cell.toolbarLabel.text = "你好"
+           
            
            if indexPath.row == 0 {
                cell.toolbarLabel.text = "翻转"
@@ -262,6 +276,9 @@ class xyLiveViewController: UIViewController, LFLiveSessionDelegate,UICollection
             break;
         case LFLiveState.error:
             stateLabel.text = "连接错误"
+            liveButton.isHidden = false
+            stopLiveButton.isHidden = true
+            
             break;
         case LFLiveState.stop:
             stateLabel.text = "未连接"
@@ -275,17 +292,28 @@ class xyLiveViewController: UIViewController, LFLiveSessionDelegate,UICollection
     
     // 开始直播
     @objc func didTappedStartLiveButton(_ button: UIButton) -> Void {
-        liveButton.setTitle("结束视频直播", for: UIControl.State())
-        liveButton.isSelected = !liveButton.isSelected;
-        if (liveButton.isSelected) {
-            liveButton.setTitle("结束视频直播", for: UIControl.State())
-            let stream = LFLiveStreamInfo()
-            stream.url = "rtmp://192.168.1.102:1950/ppx/room"
-            session.startLive(stream)
-        } else {
-            liveButton.setTitle("开始视频直播", for: UIControl.State())
-            session.stopLive()
-        }
+        
+//        liveButton.setTitle("结束视频直播", for: UIControl.State())
+        let stream = LFLiveStreamInfo()
+        stream.url = "rtmp://192.168.1.102:1950/ppx/room"
+        session.startLive(stream)
+        stopLiveButton.isHidden = false
+        button.isHidden = true
+//
+//        liveButton.setTitle("结束视频直播", for: UIControl.State())
+//        liveButton.isSelected = !liveButton.isSelected;
+//        if (liveButton.isSelected) {
+//
+//        } else {
+//            liveButton.setTitle("开始视频直播", for: UIControl.State())
+//            session.stopLive()
+//        }
+    }
+    @objc func stopLive(_ button: UIButton) -> Void {
+        session.stopLive()
+        liveButton.isHidden = false
+        stopLiveButton.isHidden = true
+        
     }
     
     
