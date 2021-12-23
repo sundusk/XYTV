@@ -626,6 +626,7 @@
 		C23E661D27707FD300E6AAE2 /* amf.c in Sources */ = {isa = PBXBuildFile; fileRef = C23E63C527707FD100E6AAE2 /* amf.c */; };
 		C23E661E27707FD300E6AAE2 /* amf.c in Sources */ = {isa = PBXBuildFile; fileRef = C23E63C527707FD100E6AAE2 /* amf.c */; };
 		C23E662227709D2500E6AAE2 /* xyLiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23E662127709D2500E6AAE2 /* xyLiveViewController.swift */; };
+		C2F3978727744463005CB008 /* xyClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F3978627744463005CB008 /* xyClass.swift */; };
 		E1A3521701BE5DEBA301B9E3 /* Pods_xyTV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AE925EFAAA00437EFB868C0 /* Pods_xyTV.framework */; };
 /* End PBXBuildFile section */
 
@@ -1087,6 +1088,7 @@
 		C23E63C527707FD100E6AAE2 /* amf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = amf.c; sourceTree = "<group>"; };
 		C23E63C627707FD100E6AAE2 /* rtmp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rtmp.h; sourceTree = "<group>"; };
 		C23E662127709D2500E6AAE2 /* xyLiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xyLiveViewController.swift; sourceTree = "<group>"; };
+		C2F3978627744463005CB008 /* xyClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xyClass.swift; sourceTree = "<group>"; };
 		EA6869630E4B2175B24EA637 /* Pods_xyTV_xyTVUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_xyTV_xyTVUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -1189,6 +1191,7 @@
 				C235E955276E071500D791FF /* Info.plist */,
 				C235E94D276E071400D791FF /* xyTV.xcdatamodeld */,
 				C23E5F62277077BE00E6AAE2 /* xyTV-Bridging-Header.h */,
+				C2F3978627744463005CB008 /* xyClass.swift */,
 			);
 			path = xyTV;
 			sourceTree = "<group>";
@@ -2048,6 +2051,7 @@
 				C23E63D627707FD100E6AAE2 /* LFLiveStreamInfo.m in Sources */,
 				C23E65D727707FD300E6AAE2 /* GPUImageKuwaharaFilter.m in Sources */,
 				C23E660427707FD300E6AAE2 /* GPUImageLightenBlendFilter.m in Sources */,
+				C2F3978727744463005CB008 /* xyClass.swift in Sources */,
 				C23E64EA27707FD200E6AAE2 /* GPUImageOutput.m in Sources */,
 				C23E658627707FD300E6AAE2 /* GPUImageLowPassFilter.m in Sources */,
 				C23E64E427707FD200E6AAE2 /* GPUImageStretchDistortionFilter.m in Sources */,

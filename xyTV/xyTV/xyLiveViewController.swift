@@ -9,6 +9,9 @@ import UIKit
 
 class xyLiveViewController: UIViewController, LFLiveSessionDelegate {
     
+    var liveButton : UIButton!
+//    var cameraButton : UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -23,13 +26,39 @@ class xyLiveViewController: UIViewController, LFLiveSessionDelegate {
         containerView.addSubview(stateLabel)
         containerView.addSubview(closeButton)
         containerView.addSubview(beautyButton)
-        containerView.addSubview(cameraButton)
-        containerView.addSubview(startLiveButton)
+//        containerView.addSubview(cameraButton)
+//        containerView.addSubview(startLiveButton)
         
         cameraButton.addTarget(self, action: #selector(didTappedCameraButton(_:)), for: .touchUpInside)
         beautyButton.addTarget(self, action: #selector(didTappedBeautyButton(_:)), for: .touchUpInside)
-        startLiveButton.addTarget(self, action: #selector(didTappedStartLiveButton(_:)), for: .touchUpInside)
+       
         
+        
+        self.setUI()
+        
+    }
+    
+    func setUI(){
+        // 开始直播
+        liveButton = UIButton()
+        containerView.addSubview(liveButton)
+        self.liveButton.snp.makeConstraints { make in
+            make.bottom.equalTo(containerView).offset(-30)
+            make.centerX.equalTo(containerView)
+            make.height.equalTo(40);
+            make.width.equalTo(xyWidth/2)
+            
+        }
+        liveButton.layer.cornerRadius = 20
+        liveButton.layer.masksToBounds = true
+        liveButton.backgroundColor = .red
+        liveButton.setTitle("开始视频直播", for: .normal)
+        liveButton.setTitleColor(UIColor.white, for: .normal)
+        liveButton.titleLabel?.font = UIFont.systemFont(ofSize: 13)
+        liveButton.addTarget(self, action: #selector(didTappedStartLiveButton(_:)), for: .touchUpInside)
+        
+        
+      
     }
     
     override func didReceiveMemoryWarning() {
@@ -125,14 +154,15 @@ class xyLiveViewController: UIViewController, LFLiveSessionDelegate {
     
     // 开始直播
     @objc func didTappedStartLiveButton(_ button: UIButton) -> Void {
-        startLiveButton.isSelected = !startLiveButton.isSelected;
-        if (startLiveButton.isSelected) {
-            startLiveButton.setTitle("结束直播", for: UIControl.State())
+        liveButton.setTitle("结束视频直播", for: UIControl.State())
+        liveButton.isSelected = !liveButton.isSelected;
+        if (liveButton.isSelected) {
+            liveButton.setTitle("结束视频直播", for: UIControl.State())
             let stream = LFLiveStreamInfo()
             stream.url = "rtmp://192.168.1.102:1950/ppx/room"
             session.startLive(stream)
         } else {
-            startLiveButton.setTitle("开始直播", for: UIControl.State())
+            liveButton.setTitle("开始视频直播", for: UIControl.State())
             session.stopLive()
         }
     }
@@ -204,16 +234,4 @@ class xyLiveViewController: UIViewController, LFLiveSessionDelegate {
         return beautyButton
     }()
     
-    // 开始直播按钮
-    var startLiveButton: UIButton = {
-        let startLiveButton = UIButton(frame: CGRect(x: 30, y: UIScreen.main.bounds.height - 50, width: UIScreen.main.bounds.width - 10 - 44, height: 44))
-        startLiveButton.layer.cornerRadius = 22
-//        startLiveButton.setTitleColor(UIColor.black, for:UIControlState())
-        startLiveButton.setTitleColor(.black, for: UIControl.State.normal)
-        startLiveButton.setTitle("开始直播", for: UIControl.State.normal)
-        startLiveButton.titleLabel!.font = UIFont.systemFont(ofSize: 14)
-//        startLiveButton.backgroundColor = UIColor(colorLiteralRed: 50, green: 32, blue: 245, alpha: 1)
-        startLiveButton.backgroundColor = UIColor.init(_colorLiteralRed: 50, green: 32, blue: 245, alpha: 1)
-        return startLiveButton
-    }()
 }
