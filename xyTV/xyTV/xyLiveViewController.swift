@@ -12,6 +12,8 @@ class xyLiveViewController: UIViewController, LFLiveSessionDelegate,UICollection
     
     var liveButton : UIButton!
     var toolbarCollection : UICollectionView!
+    var popView : xyPopView!
+    
     let cellID = "CELLID"
 //    var cameraButton : UIButton!
     
@@ -21,18 +23,17 @@ class xyLiveViewController: UIViewController, LFLiveSessionDelegate,UICollection
         
         session.delegate = self
         session.preView = self.view
-        
+        //设置美颜程度
+        self.session.beautyLevel = 1.0;
+        //设置亮度
+        self.session.brightLevel = 0.5;
         self.requestAccessForVideo()
         self.requestAccessForAudio()
         self.view.backgroundColor = UIColor.clear
         self.view.addSubview(containerView)
         containerView.addSubview(stateLabel)
-        containerView.addSubview(closeButton)
-        containerView.addSubview(beautyButton)
-//        containerView.addSubview(cameraButton)
-//        containerView.addSubview(startLiveButton)
+      
         
-       
        
        
         
@@ -142,8 +143,8 @@ class xyLiveViewController: UIViewController, LFLiveSessionDelegate,UICollection
            cell.backgroundColor = UIColor.clear
            
            cell.sender.tag =  indexPath.row + 100
-           
-           
+           cell.sender.isHighlighted = false
+//           button.adjustsImageWhenHighlighted=NO;
            cell.sender.addTarget(self, action: #selector(toolbarAdd(_:)), for: .touchUpInside)
            return cell
 
@@ -159,7 +160,22 @@ class xyLiveViewController: UIViewController, LFLiveSessionDelegate,UICollection
             
         }else if button.tag == 101{ // 美颜
             
+            
+////
+            if self.session.beautyFace{
+                session.beautyFace = false
+            }else{
+                session.beautyFace = true
+             
+                //设置美颜程度
+                self.session.beautyLevel = 1.0;
+                //设置亮度
+                self.session.brightLevel = 0.5;
+            
+            }
+
         }
+
     }
     
    
@@ -272,21 +288,6 @@ class xyLiveViewController: UIViewController, LFLiveSessionDelegate,UICollection
         }
     }
     
-    // 美颜
-    @objc func didTappedBeautyButton(_ button: UIButton) -> Void {
-        session.beautyFace = !session.beautyFace;
-        beautyButton.isSelected = !session.beautyFace
-    }
-    
-    // 摄像头
-    @objc func didTappedCameraButton(_ button: UIButton) -> Void {
-        
-    }
-    
-    // 关闭
-    @objc func didTappedCloseButton(_ button: UIButton) -> Void  {
-        
-    }
     
     //MARK: - Getters and Setters
     
@@ -316,26 +317,9 @@ class xyLiveViewController: UIViewController, LFLiveSessionDelegate,UICollection
         return stateLabel
     }()
     
-    // 关闭按钮
-    var closeButton: UIButton = {
-        let closeButton = UIButton(frame: CGRect(x: UIScreen.main.bounds.width - 10 - 44, y: 20, width: 44, height: 44))
-        closeButton.setImage(UIImage(named: "close_preview"), for: UIControl.State())
-        return closeButton
-    }()
+ 
+
     
-    // 摄像头
-    var cameraButton: UIButton = {
-        let cameraButton = UIButton(frame: CGRect(x: UIScreen.main.bounds.width - 54 * 2, y: 20, width: 44, height: 44))
-        cameraButton.setImage(UIImage(named: "camra_preview"), for: UIControl.State())
-        return cameraButton
-    }()
-    
-    // 摄像头
-    var beautyButton: UIButton = {
-        let beautyButton = UIButton(frame: CGRect(x: UIScreen.main.bounds.width - 54 * 3, y: 20, width: 44, height: 44))
-        beautyButton.setImage(UIImage(named: ""), for: .selected)
-        beautyButton.setImage(UIImage(named: ""), for: .normal)
-        return beautyButton
-    }()
+ 
     
 }

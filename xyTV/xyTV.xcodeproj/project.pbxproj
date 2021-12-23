@@ -626,6 +626,7 @@
 		C23E661D27707FD300E6AAE2 /* amf.c in Sources */ = {isa = PBXBuildFile; fileRef = C23E63C527707FD100E6AAE2 /* amf.c */; };
 		C23E661E27707FD300E6AAE2 /* amf.c in Sources */ = {isa = PBXBuildFile; fileRef = C23E63C527707FD100E6AAE2 /* amf.c */; };
 		C23E662227709D2500E6AAE2 /* xyLiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23E662127709D2500E6AAE2 /* xyLiveViewController.swift */; };
+		C2B2D04D27749D07001774D3 /* xyPopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B2D04C27749D07001774D3 /* xyPopView.swift */; };
 		C2F3978727744463005CB008 /* xyClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F3978627744463005CB008 /* xyClass.swift */; };
 		C2F3978F277454EA005CB008 /* xyToolbarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F3978D277454EA005CB008 /* xyToolbarCollectionViewCell.swift */; };
 		C2F39790277454EA005CB008 /* xyToolbarCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2F3978E277454EA005CB008 /* xyToolbarCollectionViewCell.xib */; };
@@ -1090,6 +1091,7 @@
 		C23E63C527707FD100E6AAE2 /* amf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = amf.c; sourceTree = "<group>"; };
 		C23E63C627707FD100E6AAE2 /* rtmp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rtmp.h; sourceTree = "<group>"; };
 		C23E662127709D2500E6AAE2 /* xyLiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xyLiveViewController.swift; sourceTree = "<group>"; };
+		C2B2D04C27749D07001774D3 /* xyPopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xyPopView.swift; sourceTree = "<group>"; };
 		C2F3978627744463005CB008 /* xyClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xyClass.swift; sourceTree = "<group>"; };
 		C2F3978D277454EA005CB008 /* xyToolbarCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xyToolbarCollectionViewCell.swift; sourceTree = "<group>"; };
 		C2F3978E277454EA005CB008 /* xyToolbarCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = xyToolbarCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -1191,6 +1193,7 @@
 				C23E662127709D2500E6AAE2 /* xyLiveViewController.swift */,
 				C2F3978D277454EA005CB008 /* xyToolbarCollectionViewCell.swift */,
 				C2F3978E277454EA005CB008 /* xyToolbarCollectionViewCell.xib */,
+				C2B2D04C27749D07001774D3 /* xyPopView.swift */,
 				C235E94A276E071400D791FF /* Main.storyboard */,
 				C235E950276E071500D791FF /* Assets.xcassets */,
 				C235E952276E071500D791FF /* LaunchScreen.storyboard */,
@@ -2122,6 +2125,7 @@
 				C23E652F27707FD200E6AAE2 /* GPUImagePoissonBlendFilter.m in Sources */,
 				C23E64DB27707FD200E6AAE2 /* GLProgram.m in Sources */,
 				C2F3978F277454EA005CB008 /* xyToolbarCollectionViewCell.swift in Sources */,
+				C2B2D04D27749D07001774D3 /* xyPopView.swift in Sources */,
 				C23E63C727707FD100E6AAE2 /* LFLiveVideoConfiguration.m in Sources */,
 				C23E644B27707FD200E6AAE2 /* GPUImageGrayscaleFilter.m in Sources */,
 				C23E65AA27707FD300E6AAE2 /* GPUImageGlassSphereFilter.m in Sources */,
